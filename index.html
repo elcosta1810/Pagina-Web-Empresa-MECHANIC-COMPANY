@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MECHANIC COMPANY</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            position: relative;
+        }
+
+        header img {
+            max-width: 120px;
+            height: auto;
+            position: absolute;
+            left: 1rem;
+            top: 1rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+
+        nav a {
+            color: #fff;
+            padding: 1rem;
+            text-decoration: none;
+            display: block;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            padding: 2rem;
+        }
+
+        section {
+            display: none;
+            margin-bottom: 2rem;
+        }
+
+        section.active {
+            display: block;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .services-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .services-list li {
+            background-color: #f4f4f4;
+            margin: 0.5rem 0;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        .services-list h3 {
+            margin: 0;
+        }
+
+        .services-list p {
+            margin: 0.5rem 0;
+        }
+
+        .services-list ul {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="https://i.pinimg.com/550x/63/11/8a/63118a148da3e3ba67e95897b18b0c41.jpg" alt="Logo de Mi Empresa">
+        <h1>MECHANIC COMPANY</h1>
+        <p>Tu éxito, nuestra misión</p>
+    </header>
+
+    <nav>
+        <a href="#" data-target="inicio">Inicio</a>
+        <a href="#" data-target="mision">Misión</a>
+        <a href="#" data-target="vision">Visión</a>
+        <a href="#" data-target="servicios">Servicios</a>
+        <a href="#" data-target="contacto">Contacto</a>
+    </nav>
+
+    <div class="container">
+        <section id="inicio" class="active">
+            <h2>Bienvenido a Mi Empresa</h2>
+            <p>
+                En MECHANIC COMPANY, estamos dedicados a ofrecer soluciones integrales que impulsan el éxito de tu negocio. Con un portafolio de servicios diversificado y adaptado a tus necesidades específicas, estamos aquí para ayudarte a alcanzar tus objetivos de manera eficiente y efectiva.
+            </p>
+            <p>
+                Nuestro equipo de expertos está comprometido en proporcionar la más alta calidad y atención personalizada en cada proyecto. Creemos que cada desafío es una oportunidad para innovar y superar expectativas, y nos enorgullece ser tu socio estratégico en cada etapa del camino.
+            </p>
+            <p><strong>¿Por qué elegirnos?</strong></p>
+            <h4>Experiencia:</h4>
+            <p>Contamos con años de experiencia en la industria, ofreciendo soluciones que han demostrado su eficacia y valor.</p>
+            <h4>Innovación:</h4>
+            <p>Estamos a la vanguardia de las tendencias y tecnologías para asegurarte servicios modernos y efectivos.</p>
+            <h4>Compromiso:</h4>
+            <p>Tu éxito es nuestra prioridad. Trabajamos incansablemente para entender tus necesidades y ofrecer resultados que marcan la diferencia.</p>
+        </section>
+
+        <section id="mision">
+            <h2>Misión</h2>
+            <p>
+                Ofrecer soluciones integrales y personalizadas que impulsen el éxito y el crecimiento de nuestros clientes. Nos dedicamos a proporcionar servicios de alta calidad que no solo satisfacen, sino que superan las expectativas, ayudando a cada cliente a alcanzar sus objetivos de manera efectiva y eficiente.
+            </p>
+        </section>
+
+        <section id="vision">
+            <h2>Visión</h2>
+            <p>
+                Ser el referente líder en soluciones integrales y servicios de alta calidad, transformando la manera en que nuestros clientes alcanzan sus metas y superan sus desafíos.
+            </p>
+        </section>
+
+        <section id="servicios">
+            <h2>Nuestros Servicios</h2>
+            <ul class="services-list">
+                <li>
+                    <h3>Consultoría Estratégica</h3>
+                    <p>Brindamos asesoramiento experto para ayudarte a definir y alcanzar tus objetivos empresariales. Desde el análisis de mercado hasta la planificación estratégica, nuestro equipo te ofrece las herramientas necesarias para tomar decisiones informadas y efectivas.</p>
+                    <h4>Beneficios:</h4>
+                    <ul>
+                        <li>Estrategias personalizadas para tu negocio.</li>
+                        <li>Análisis detallado del mercado y la competencia.</li>
+                        <li>Planificación a largo plazo para el crecimiento sostenible.</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Desarrollo de Software a Medida</h3>
+                    <p>Creamos soluciones de software personalizadas que se adaptan a las necesidades específicas de tu empresa. Desde aplicaciones móviles hasta sistemas de gestión, nuestro equipo de desarrolladores trabaja para ofrecer soluciones innovadoras y eficientes.</p>
+                    <h4>Beneficios:</h4>
+                    <ul>
+                        <li>Soluciones tecnológicas a medida.</li>
+                        <li>Mejora de la eficiencia operativa.</li>
+                        <li>Escalabilidad y flexibilidad para adaptarse al crecimiento.</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Marketing Digital</h3>
+                    <p>Implementamos estrategias de marketing digital para aumentar tu visibilidad en línea y atraer a tu público objetivo. Ofrecemos servicios como SEO, publicidad en redes sociales, y campañas de email marketing para maximizar tu impacto digital.</p>
+                    <h4>Beneficios:</h4>
+                    <ul>
+                        <li>Aumento de la visibilidad de tu marca.</li>
+                        <li>Estrategias dirigidas a tu audiencia específica.</li>
+                        <li>Medición y análisis de resultados para optimizar campañas.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Para más información, por favor contáctanos a través de los siguientes medios:</p>
+            <p><strong>Teléfono:</strong> +1 (123) 456-7890</p>
+            <p><strong>Email:</strong> <a href="mailto:serviceportfolio@mechanicompany.com">serviceportfolio@mechanicompany.com</a></p>
+            <p><strong>Dirección:</strong> Calle 64 #10-05, Bogotá D.C.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 MECHANIC COMPANY. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('nav a');
+            const sections = document.querySelectorAll('section');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = e.target.getAttribute('data-target');
+
+                    sections.forEach(section => {
+                        if (section.id === targetId) {
+                            section.classList.add('active');
+                        } else {
+                            section.classList.remove('active');
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido">
+
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+  </main>
